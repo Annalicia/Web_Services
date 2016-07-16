@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebServices.h"
+#import "Declarations.h"
 
 @interface Home : UIViewController
 

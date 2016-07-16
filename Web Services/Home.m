@@ -8,6 +8,10 @@
 
 #import "Home.h"
 
+#define nLat @"20.694073"
+#define nLng @"-103.421259"
+
+
 @interface Home ()
 
 @end
@@ -16,7 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSDictionary *json = [WebServices getWeatherWithLatitude:nLat AndLongitude:nLng];
+    print(NSLog(@"json = %@",json))
 }
 
 - (void)didReceiveMemoryWarning {
