@@ -8,6 +8,9 @@
 
 #import "WebServices.h"
 
+#define nURLMain            @"http://api.openweathermap.org/data/2.5/"
+#define nURLByGeoCoord      @"weather?lat="
+
 @implementation WebServices
 
 @end
