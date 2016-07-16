@@ -20,8 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSDictionary *json = [WebServices getWeatherWithLatitude:nLat AndLongitude:nLng];
-    print(NSLog(@"json = %@",json))
+    mjsonGeo = [WebServices getWeatherWithLatitude:nLat AndLongitude:nLng];
+    print(NSLog(@"mjsonGeo  = %@",mjsonGeo))
+    ObjectResponse *object  = [Parser parseGeoObject];
+    Coord *coordObject      = object.coord;
+    float lat               = coordObject.lat;
+    float lng               = coordObject.lon;
+    
+    NSString *stName        = object.name;
+    
+    print(NSLog(@"We are at %@ with latitude %f and longitude %f",stName, lat, lng))
+    
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

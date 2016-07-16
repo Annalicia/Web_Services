@@ -8,6 +8,7 @@
 
 #import "Declarations.h"
 
+NSDictionary *mjsonGeo;
 @implementation Declarations
 
 @end

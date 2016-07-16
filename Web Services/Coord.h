@@ -1,5 +1,5 @@
 //
-//  Parser.h
+//  Coord.h
 //  Web Services
 //
 //  Created by Walter Gonzalez Domenzain on 15/07/16.
@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Declarations.h"
 
-@interface Parser : NSObject
-+ (ObjectResponse *)parseGeoObject;
+@interface Coord : NSObject
+@property (nonatomic) float lon;
+@property (nonatomic) float lat;
+
 @end

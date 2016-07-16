@@ -9,6 +9,7 @@
 #import "Declarations.h"
 #import "OCMapperConfig.h"
 #import "OCMapper.h"
+#import "Declarations.h"
 
 @implementation OCMapperConfig
 + (void)configure {
