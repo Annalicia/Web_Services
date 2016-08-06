@@ -12,7 +12,11 @@
 
 
 @interface Home : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *btnLoad;
+@property (strong, nonatomic) IBOutlet UILabel *lblCityValue;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityLoad;
 
+- (IBAction)btnLoadPressed:(id)sender;
 
 @end
 
