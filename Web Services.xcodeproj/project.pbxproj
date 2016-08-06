@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12B53571D556E82002753D2 /* MainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D12B53561D556E82002753D2 /* MainObject.m */; };
 		D13441BD1D39B00500295EAC /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = D13441BC1D39B00500295EAC /* Declarations.m */; };
 		D13441C01D39B01800295EAC /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D13441BF1D39B01800295EAC /* WebServices.m */; };
 		D13441C31D39B02900295EAC /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = D13441C21D39B02900295EAC /* Parser.m */; };
@@ -43,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D12B53551D556E82002753D2 /* MainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainObject.h; sourceTree = "<group>"; };
+		D12B53561D556E82002753D2 /* MainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainObject.m; sourceTree = "<group>"; };
 		D13441BB1D39B00500295EAC /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
 		D13441BC1D39B00500295EAC /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 		D13441BE1D39B01800295EAC /* WebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				D13441EF1D39C42200295EAC /* ObjectResponse.m */,
 				D13441F11D39C49D00295EAC /* Coord.h */,
 				D13441F21D39C49D00295EAC /* Coord.m */,
+				D12B53551D556E82002753D2 /* MainObject.h */,
+				D12B53561D556E82002753D2 /* MainObject.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -398,6 +403,7 @@
 				D13441E91D39BFFB00295EAC /* SBJsonStreamWriterState.m in Sources */,
 				D13441EA1D39BFFB00295EAC /* SBJsonTokeniser.m in Sources */,
 				D13441C61D39B03F00295EAC /* OCMapperConfig.m in Sources */,
+				D12B53571D556E82002753D2 /* MainObject.m in Sources */,
 				D1EBC6AA1D39AE76007B0AE5 /* NSObject+ObjectMapper.m in Sources */,
 				D1EBC6741D39ABCD007B0AE5 /* main.m in Sources */,
 				D1EBC6AD1D39AE76007B0AE5 /* CommonLoggingProvider.m in Sources */,

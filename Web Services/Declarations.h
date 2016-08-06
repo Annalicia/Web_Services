@@ -11,6 +11,7 @@
 #import "ObjectMapper.h"
 #import "ObjectResponse.h"
 #import "Coord.h"
+#import "MainObject.h"
 #import "Parser.h"
 
 //Debug

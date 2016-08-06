@@ -69,6 +69,19 @@
         float lng                       = coordObject.lon;
         NSString *stName                = object.name;
         
+        MainObject *mainObject          = object.main;
+        float tempCelsius               = mainObject.temp - 273.15;
+        
+        self.lblTempValue.text          = [NSString stringWithFormat:@"%.1f", tempCelsius];
+        self.lblTempValue.text          = [self.lblTempValue.text  stringByAppendingString:@" ºC"];
+        self.lblPressureValue.text      = [NSString stringWithFormat:@"%f", mainObject.pressure];
+        self.lblHumidityValue.text      = [NSString stringWithFormat:@"%f", mainObject.humidity];
+        self.lblTempMinValue.text       = [NSString stringWithFormat:@"%f", mainObject.temp_min];
+        self.lblTempMaxValue.text       = [NSString stringWithFormat:@"%f", mainObject.temp_max];
+        self.lblSeaLevelValue.text      = [NSString stringWithFormat:@"%f", mainObject.sea_level];
+        self.lblGroundLevel.text        = [NSString stringWithFormat:@"%f", mainObject.grnd_level];
+        
+        
         self.lblCityValue.text          = stName;
         print(NSLog(@"We are at %@ with latitude %f and longitude %f",stName, lat, lng))
         [UIApplication sharedApplication].networkActivityIndicatorVisible   = NO;
