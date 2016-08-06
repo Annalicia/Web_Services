@@ -32,7 +32,13 @@
 #pragma mark - Action methods
 /**********************************************************************************************/
 - (IBAction)btnLoadPressed:(id)sender {
-    [self qeueLoadData];
+    if (![self.txtLatitude.text isEqual:@""] && ![self.txtLongitude.text isEqual:@""]) {
+        [self qeueLoadData];
+    }
+    else {
+        self.lblCityValue.text = @"Error, campo vacío";
+    }
+
 }
 /**********************************************************************************************/
 #pragma mark - Task methods
@@ -51,7 +57,7 @@
 }
 //----------------------------------------------------------------------------------------------
 - (void)loadData {
-    mjsonGeo                        = [WebServices getWeatherWithLatitude:nLat AndLongitude:nLng];
+    mjsonGeo                        = [WebServices getWeatherWithLatitude:self.txtLatitude.text AndLongitude:self.txtLongitude.text];
     print(NSLog(@"mjsonGeo  = %@",mjsonGeo))
 }
 //----------------------------------------------------------------------------------------------

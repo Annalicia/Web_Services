@@ -15,6 +15,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnLoad;
 @property (strong, nonatomic) IBOutlet UILabel *lblCityValue;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityLoad;
+@property (strong, nonatomic) IBOutlet UITextField *txtLatitude;
+@property (strong, nonatomic) IBOutlet UITextField *txtLongitude;
 
 - (IBAction)btnLoadPressed:(id)sender;
 
