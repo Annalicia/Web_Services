@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblTempMaxValue;
 @property (strong, nonatomic) IBOutlet UILabel *lblSeaLevelValue;
 @property (strong, nonatomic) IBOutlet UILabel *lblGroundLevel;
+@property (strong, nonatomic) IBOutlet UIView *vMap;
 
 
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityLoad;

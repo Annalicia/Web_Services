@@ -7,12 +7,16 @@
 //
 
 #import "Home.h"
+@import GoogleMaps;
 
 #define nLat @"20.694073"
 #define nLng @"-103.421259"
 
 
-@interface Home ()
+@interface Home () {
+    GMSMapView *mapView_;
+}
+
 
 @end
 
